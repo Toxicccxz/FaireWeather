@@ -123,8 +123,6 @@ public class WeatherActivity extends AppCompatActivity {
         rain.setText((Snow.getOne_h() == null? (Rain.getOne_h() == null? 0.0 : Rain.getOne_h()) : Snow.getOne_h()) + " mm");
         pressure.setText("pressure " + Current.getPressure() + "hPa");
 
-        LogUtils.e(TAG, ResponseJSON.getDaily().get(7).getWeatherDailyList().get(0).getMain());
-
     }
 
     @SuppressLint({"SimpleDateFormat", "SetTextI18n"})
